@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Kehadiran</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('foto.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 20px;
+            color: #fff;
+        }
+        h1 {
+            color: #fff;
+            font-size: 24px; /* Mengurangi ukuran font judul */
+            text-align: center;
+            margin-bottom: 20px; /* Mengurangi jarak bawah judul */
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+        table {
+            width: 100%;
+            max-width: 900px; /* Mengatur lebar maksimum tabel */
+            border-collapse: collapse;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 10px; /* Mengurangi padding sel */
+            text-align: center;
+            border: 1px solid #ddd;
+            font-size: 12px; /* Mengurangi ukuran font dalam tabel */
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        td {
+            color: #333;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .status-HADIR {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .status-SAKIT {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .status-IZIN {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+        .status-ALFA {
+            background-color: #e2e3e5;
+            color: #6c757d;
+        }
+        .tab-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .tab {
+            margin: 0 5px; /* Mengurangi margin tab */
+            padding: 8px 15px; /* Mengurangi padding tab */
+            font-size: 14px; /* Mengurangi ukuran font tab */
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+        .tab.active {
+            background-color: #0056b3;
+        }
+        .controls {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #printButton {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 6px 12px; /* Mengurangi padding tombol cetak */
+            font-size: 12px; /* Mengurangi ukuran font tombol cetak */
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #printButton:hover {
+            background-color: #218838;
+        }
+        .print-header {
+            display: none;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #000;
+        }
+        @media print {
+            @page {
+                size: A4;
+                margin: 10mm;
+            }
+            body {
+                background: none;
+                color: #000;
+            }
+            .tab-container,
+            .controls {
+                display: none;
+            }
+            #printButton {
+                display: none;
+            }
+            .print-header {
+                display: block;
+                font-size: 18px;
+                margin-bottom: 20px;
+                color: #000;
+            }
+            h1 {
+                font-size: 24px;
+                text-align: center;
+            }
+            table {
+                page-break-inside: auto;
+                width: 100%;
+            }
+            tr {
+                page-break-inside: avoid;
+                page-break-after: auto;
+            }
+            tbody tr:last-child {
+                page-break-after: avoid;
+            }
+            th, td {
+                padding: 5px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabel Kehadiran Mahasiswa KKN</h1>
+
+    <div class="print-header">
+        <span id="selectedMonth">Agustus 2024</span>
+    </div>
+
+    <div class="tab-container no-print">
+        <button class="tab active" data-month="08">Agustus 2024</button>
+        <button class="tab" data-month="09">September 2024</button>
+        <button class="tab" data-month="10">Oktober 2024</button>
+        <button class="tab" data-month="11">November 2024</button>
+    </div>
+
+    <div class="controls no-print">
+        <button id="printButton">Cetak</button>
+    </div>
+
+    <table id="attendanceTable">
+        <thead>
+            <tr>
+                <th>Tanggal</th>
+                <!-- Nama Mahasiswa akan ditambahkan di sini -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data akan dimasukkan melalui JavaScript -->
+        </tbody>
+    </table>
+
+    <script src="data.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const data = attendanceData;
+            const tableBody = document.querySelector('#attendanceTable tbody');
+            const headerRow = document.querySelector('#attendanceTable thead tr');
+            const tabs = document.querySelectorAll('.tab');
+            const printButton = document.getElementById('printButton');
+            const monthLabel = document.getElementById('selectedMonth');
+            const printHeader = document.querySelector('.print-header');
+
+            const students = {};
+            const dates = new Set();
+
+            // Mengumpulkan data dan tanggal
+            data.forEach(entry => {
+                const { NIM, NamaLengkap, TanggalAbsen, Keterangan } = entry;
+                const [month, date, year] = TanggalAbsen.split('/');
+
+                if (!students[NIM]) {
+                    students[NIM] = {
+                        NamaLengkap,
+                        attendance: {}
+                    };
+                }
+
+                const formattedDate = `${month}/${date}/${year}`;
+
+                if (!students[NIM].attendance[formattedDate]) {
+                    students[NIM].attendance[formattedDate] = { HADIR: 0, SAKIT: 0, IZIN: 0, ALFA: 0 };
+                }
+
+                if (Keterangan === 'HADIR') students[NIM].attendance[formattedDate].HADIR += 1;
+                else if (Keterangan === 'SAKIT') students[NIM].attendance[formattedDate].SAKIT += 1;
+                else if (Keterangan === 'IZIN') students[NIM].attendance[formattedDate].IZIN += 1;
+                else students[NIM].attendance[formattedDate].ALFA += 1;
+
+                // Menambahkan tanggal yang relevan ke set
+                dates.add(formattedDate);
+            });
+
+            // Mengisi header tabel dengan kolom mahasiswa
+            const populateTableHeader = () => {
+                headerRow.innerHTML = '<th>Tanggal</th>';
+                Object.keys(students).forEach(NIM => {
+                    if (students[NIM]) {
+                        headerRow.innerHTML += `<th>${students[NIM].NamaLengkap} (${NIM})</th>`;
+                    }
+                });
+            };
+
+            // Mengisi tabel
+            const populateTable = (month) => {
+                tableBody.innerHTML = '';
+                const monthName = new Date(`${month}/01/2024`).toLocaleString('id-ID', { month: 'long', year: 'numeric' });
+                monthLabel.textContent = monthName;
+                printHeader.innerHTML = `Tabel Kehadiran Bulan ${monthName}`;
+
+                dates.forEach(date => {
+                    const [monthPart] = date.split('/');
+                    if (monthPart === month) {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `<td>${date}</td>`;
+
+                        Object.entries(students).forEach(([NIM, { attendance }]) => {
+                            const { HADIR, SAKIT, IZIN, ALFA } = attendance[date] || { HADIR: 0, SAKIT: 0, IZIN: 0, ALFA: 0 };
+                            let status = 'ALFA';
+                            if (HADIR > 0) status = 'HADIR';
+                            else if (SAKIT > 0) status = 'SAKIT';
+                            else if (IZIN > 0) status = 'IZIN';
+                            row.innerHTML += `<td class="status-${status}">${status}</td>`;
+                        });
+                        tableBody.appendChild(row);
+                    }
+                });
+            };
+
+            // Mengisi tabel dan header awal
+            populateTableHeader();
+            populateTable('08'); // Menampilkan data untuk bulan Agustus secara default
+
+            // Event listener untuk tab
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+
+                    // Menampilkan data sesuai bulan yang dipilih
+                    const selectedMonth = tab.getAttribute('data-month');
+                    populateTable(selectedMonth);
+                });
+            });
+
+            // Event listener untuk tombol cetak
+            printButton.addEventListener('click', () => {
+                window.print();
+            });
+        });
+    </script>
+</body>
+</html>
