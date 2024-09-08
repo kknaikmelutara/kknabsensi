@@ -15,15 +15,15 @@
         }
         h1 {
             color: #fff;
-            font-size: 24px; /* Mengurangi ukuran font judul */
+            font-size: 24px;
             text-align: center;
-            margin-bottom: 20px; /* Mengurangi jarak bawah judul */
+            margin-bottom: 20px;
             letter-spacing: 1px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
         }
         table {
             width: 100%;
-            max-width: 900px; /* Mengatur lebar maksimum tabel */
+            max-width: 900px;
             border-collapse: collapse;
             margin: 0 auto;
             background-color: rgba(255, 255, 255, 0.9);
@@ -32,10 +32,10 @@
             overflow: hidden;
         }
         th, td {
-            padding: 10px; /* Mengurangi padding sel */
+            padding: 10px;
             text-align: center;
             border: 1px solid #ddd;
-            font-size: 12px; /* Mengurangi ukuran font dalam tabel */
+            font-size: 12px;
         }
         th {
             background-color: #007bff;
@@ -67,7 +67,7 @@
             color: #6c757d;
         }
         .status-LIBUR {
-            background-color: #dc3545; /* Merah untuk LIBUR */
+            background-color: #dc3545;
             color: #fff;
         }
         .tab-container {
@@ -76,9 +76,9 @@
             margin-bottom: 20px;
         }
         .tab {
-            margin: 0 5px; /* Mengurangi margin tab */
-            padding: 8px 15px; /* Mengurangi padding tab */
-            font-size: 14px; /* Mengurangi ukuran font tab */
+            margin: 0 5px;
+            padding: 8px 15px;
+            font-size: 14px;
             cursor: pointer;
             background-color: #007bff;
             color: #fff;
@@ -97,8 +97,8 @@
             color: #fff;
             border: none;
             border-radius: 5px;
-            padding: 6px 12px; /* Mengurangi padding tombol cetak */
-            font-size: 12px; /* Mengurangi ukuran font tombol cetak */
+            padding: 6px 12px;
+            font-size: 12px;
             cursor: pointer;
             transition: background-color 0.3s;
         }
@@ -170,7 +170,7 @@
     </div>
 
     <div class="controls no-print">
-        <button id="printButton">Cetak</button>
+        <button id="printButton">Ambil Screenshot</button>
     </div>
 
     <table id="attendanceTable">
@@ -185,6 +185,7 @@
         </tbody>
     </table>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="data.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -266,23 +267,30 @@
 
             // Mengisi tabel dan header awal
             populateTableHeader();
-            populateTable('08'); // Menampilkan data untuk bulan Agustus secara default
+            populateTable('08');
 
-            // Event listener untuk tab
+            // Mengubah tabel ketika tab bulan diganti
             tabs.forEach(tab => {
                 tab.addEventListener('click', () => {
                     tabs.forEach(t => t.classList.remove('active'));
                     tab.classList.add('active');
-
-                    // Menampilkan data sesuai bulan yang dipilih
                     const selectedMonth = tab.getAttribute('data-month');
                     populateTable(selectedMonth);
                 });
             });
 
-            // Event listener untuk tombol cetak
+            // Fungsi cetak
             printButton.addEventListener('click', () => {
-                window.print();
+                const tableElement = document.getElementById('attendanceTable');
+                
+                html2canvas(tableElement).then(canvas => {
+                    const imgData = canvas.toDataURL('image/png');
+                    
+                    // Membuka gambar di tab baru untuk di-download atau dicetak
+                    const newTab = window.open();
+                    newTab.document.write('<img src="' + imgData + '"/>');
+                    newTab.document.close();
+                });
             });
         });
     </script>
