@@ -66,6 +66,10 @@
             background-color: #e2e3e5;
             color: #6c757d;
         }
+        .status-LIBUR {
+            background-color: #dc3545; /* Merah untuk LIBUR */
+            color: #fff;
+        }
         .tab-container {
             display: flex;
             justify-content: center;
@@ -210,12 +214,13 @@
                 const formattedDate = `${month}/${date}/${year}`;
 
                 if (!students[NIM].attendance[formattedDate]) {
-                    students[NIM].attendance[formattedDate] = { HADIR: 0, SAKIT: 0, IZIN: 0, ALFA: 0 };
+                    students[NIM].attendance[formattedDate] = { HADIR: 0, SAKIT: 0, IZIN: 0, ALFA: 0, LIBUR: 0 };
                 }
 
                 if (Keterangan === 'HADIR') students[NIM].attendance[formattedDate].HADIR += 1;
                 else if (Keterangan === 'SAKIT') students[NIM].attendance[formattedDate].SAKIT += 1;
                 else if (Keterangan === 'IZIN') students[NIM].attendance[formattedDate].IZIN += 1;
+                else if (Keterangan === 'LIBUR') students[NIM].attendance[formattedDate].LIBUR += 1;
                 else students[NIM].attendance[formattedDate].ALFA += 1;
 
                 // Menambahkan tanggal yang relevan ke set
@@ -246,11 +251,12 @@
                         row.innerHTML = `<td>${date}</td>`;
 
                         Object.entries(students).forEach(([NIM, { attendance }]) => {
-                            const { HADIR, SAKIT, IZIN, ALFA } = attendance[date] || { HADIR: 0, SAKIT: 0, IZIN: 0, ALFA: 0 };
+                            const { HADIR, SAKIT, IZIN, ALFA, LIBUR } = attendance[date] || { HADIR: 0, SAKIT: 0, IZIN: 0, ALFA: 0, LIBUR: 0 };
                             let status = 'ALFA';
                             if (HADIR > 0) status = 'HADIR';
                             else if (SAKIT > 0) status = 'SAKIT';
                             else if (IZIN > 0) status = 'IZIN';
+                            else if (LIBUR > 0) status = 'LIBUR';
                             row.innerHTML += `<td class="status-${status}">${status}</td>`;
                         });
                         tableBody.appendChild(row);
