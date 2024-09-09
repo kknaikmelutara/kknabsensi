@@ -281,7 +281,7 @@ const attendanceData = [
   { Timestamp: "09/08/2024 11:20:30", NIM: "210602046", NamaLengkap: "M. YOGA APRIADI", Kegiatan: "KERJA PRAKTIK", Keterangan: "LIBUR", TanggalAbsen: "09/08/2024", Keterangan2: "LIBUR" },
 
   { Timestamp: "09/09/2024 06:56:53", NIM: "210604028", NamaLengkap: "AHMAD AZLAN ALFARIZI", Kegiatan: "KERJA PRAKTIK", Keterangan: "HADIR", TanggalAbsen: "09/09/2024", Keterangan2: "HADIR" },
-  { Timestamp: "09/09/2024 07:00:10", NIM: "210102005", NamaLengkap: "BAIQ RISA APRIANTARI", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "HADIR", TanggalAbsen: "09/09/2024", Keterangan2: "HADIR" },
+  { Timestamp: "09/09/2024 10:50:05", NIM: "210601032", NamaLengkap: "IRWAN FAKHRURROZI", Kegiatan: "KERJA PRAKTIK", Keterangan: "HADIR", TanggalAbsen: "09/08/2024", Keterangan2: "HADIR" },
   { Timestamp: "09/09/2024 07:00:32", NIM: "210102261", NamaLengkap: "ENKI RIZALDO", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "HADIR", TanggalAbsen: "09/09/2024", Keterangan2: "HADIR" },
   { Timestamp: "09/09/2024 07:00:49", NIM: "210102356", NamaLengkap: "LILIK SURIANI", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "HADIR", TanggalAbsen: "09/09/2024", Keterangan2: "HADIR" },
   { Timestamp: "09/09/2024 07:00:55", NIM: "210202031", NamaLengkap: "MAELI ASTUTI", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "HADIR", TanggalAbsen: "09/09/2024", Keterangan2: "HADIR" },
