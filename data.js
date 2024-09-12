@@ -319,6 +319,20 @@ const attendanceData = [
   { Timestamp: "09/11/2024 14:15:19", NIM: "210102261", NamaLengkap: "ENKI RIZALDO", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "HADIR", TanggalAbsen: "09/11/2024", Keterangan2: "HADIR" },
   { Timestamp: "09/11/2024 14:15:40", NIM: "210102005", NamaLengkap: "BAIQ RISA APRIANTARI", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "HADIR", TanggalAbsen: "09/11/2024", Keterangan2: "HADIR" },
   { Timestamp: "09/11/2024 14:16:20", NIM: "210102027", NamaLengkap: "MUH. MIRWAN APRIANDI", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "HADIR", TanggalAbsen: "09/11/2024", Keterangan2: "HADIR" },
+
+    { Timestamp: "09/12/2024 07:52:53", NIM: "210102005", NamaLengkap: "BAIQ RISA APRIANTARI", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "HADIR", TanggalAbsen: "09/12/2024", Keterangan2: "HADIR" },
+  { Timestamp: "09/12/2024 08:26:01", NIM: "210202031", NamaLengkap: "MAELI ASTUTI", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "HADIR", TanggalAbsen: "09/12/2024", Keterangan2: "HADIR" },
+  { Timestamp: "09/12/2024 08:28:30", NIM: "210102372", NamaLengkap: "SAPMA DEWI ANGRRAINI", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "HADIR", TanggalAbsen: "09/12/2024", Keterangan2: "HADIR" },
+  { Timestamp: "09/12/2024 09:03:16", NIM: "210602046", NamaLengkap: "M. YOGA APRIADI", Kegiatan: "KERJA PRAKTIK", Keterangan: "HADIR", TanggalAbsen: "09/12/2024", Keterangan2: "HADIR" },
+  { Timestamp: "09/12/2024 09:15:27", NIM: "210102356", NamaLengkap: "LILIK SURIANI", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "HADIR", TanggalAbsen: "09/12/2024", Keterangan2: "HADIR" },
+  { Timestamp: "09/12/2024 09:32:09", NIM: "210602012", NamaLengkap: "LAELATUL JANNAH", Kegiatan: "KERJA PRAKTIK", Keterangan: "HADIR", TanggalAbsen: "09/12/2024", Keterangan2: "HADIR" },
+  { Timestamp: "09/12/2024 09:32:32", NIM: "210602009", NamaLengkap: "HANDAYANI", Kegiatan: "KERJA PRAKTIK", Keterangan: "HADIR", TanggalAbsen: "09/12/2024", Keterangan2: "HADIR" },
+  { Timestamp: "09/12/2024 10:54:10", NIM: "210601032", NamaLengkap: "IRWAN FAKHRURROZI", Kegiatan: "KERJA PRAKTIK", Keterangan: "HADIR", TanggalAbsen: "09/12/2024", Keterangan2: "HADIR" },
+  { Timestamp: "09/12/2024 10:56:54", NIM: "210604028", NamaLengkap: "AHMAD AZLAN ALFARIZI", Kegiatan: "KERJA PRAKTIK", Keterangan: "HADIR", TanggalAbsen: "09/12/2024", Keterangan2: "HADIR" },
+  { Timestamp: "09/12/2024 10:57:33", NIM: "210102261", NamaLengkap: "ENKI RIZALDO", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "HADIR", TanggalAbsen: "09/12/2024", Keterangan2: "HADIR" },
+  { Timestamp: "09/12/2024 10:58:04", NIM: "210102027", NamaLengkap: "MUH. MIRWAN APRIANDI", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "HADIR", TanggalAbsen: "09/12/2024", Keterangan2: "HADIR" },
+  { Timestamp: "09/12/2024 10:58:32", NIM: "210104048", NamaLengkap: "MUH. IHWAN ZAINI", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "IZIN", TanggalAbsen: "09/12/2024", Keterangan2: "IZIN" },
+
     // Add more entries for September as needed
 
     // October 2024
