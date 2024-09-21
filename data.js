@@ -438,6 +438,19 @@ const attendanceData = [
   { Timestamp: "09/20/2024 11:50:30", NIM: "210604028", NamaLengkap: "AHMAD AZLAN ALFARIZI", Kegiatan: "KERJA PRAKTIK", Keterangan: "HADIR", TanggalAbsen: "09/20/2024", Keterangan2: "HADIR" },
   { Timestamp: "09/20/2024 12:12:58", NIM: "210602012", NamaLengkap: "LAELATUL JANNAH", Kegiatan: "KERJA PRAKTIK", Keterangan: "HADIR", TanggalAbsen: "09/20/2024", Keterangan2: "HADIR" },
 
+    { Timestamp: "09/21/2024 08:12:03", NIM: "210104048", NamaLengkap: "MUH. IHWAN ZAINI", Kegiatan: "MAULID NABI", Keterangan: "IZIN", TanggalAbsen: "09/21/2024", Keterangan2: "IZIN" },
+  { Timestamp: "09/21/2024 08:35:18", NIM: "210102356", NamaLengkap: "LILIK SURIANI", Kegiatan: "MAULID NABI", Keterangan: "HADIR", TanggalAbsen: "09/21/2024", Keterangan2: "HADIR" },
+  { Timestamp: "09/21/2024 08:50:21", NIM: "210102027", NamaLengkap: "MUH. MIRWAN APRIANDI", Kegiatan: "MAULID NABI", Keterangan: "HADIR", TanggalAbsen: "09/21/2024", Keterangan2: "HADIR" },
+  { Timestamp: "09/21/2024 09:05:14", NIM: "210102261", NamaLengkap: "ENKI RIZALDO", Kegiatan: "MAULID NABI", Keterangan: "HADIR", TanggalAbsen: "09/21/2024", Keterangan2: "HADIR" },
+  { Timestamp: "09/21/2024 09:32:41", NIM: "210102372", NamaLengkap: "SAPMA DEWI ANGRRAINI", Kegiatan: "MAULID NABI", Keterangan: "HADIR", TanggalAbsen: "09/21/2024", Keterangan2: "HADIR" },
+  { Timestamp: "09/21/2024 09:55:13", NIM: "210102005", NamaLengkap: "BAIQ RISA APRIANTARI", Kegiatan: "MAULID NABI", Keterangan: "HADIR", TanggalAbsen: "09/21/2024", Keterangan2: "HADIR" },
+  { Timestamp: "09/21/2024 10:14:29", NIM: "210202031", NamaLengkap: "MAELI ASTUTI", Kegiatan: "MAULID NABI", Keterangan: "HADIR", TanggalAbsen: "09/21/2024", Keterangan2: "HADIR" },
+  { Timestamp: "09/21/2024 10:42:03", NIM: "210601032", NamaLengkap: "IRWAN FAKHRURROZI", Kegiatan: "MAULID NABI", Keterangan: "HADIR", TanggalAbsen: "09/21/2024", Keterangan2: "HADIR" },
+  { Timestamp: "09/21/2024 11:07:48", NIM: "210602046", NamaLengkap: "M. YOGA APRIADI", Kegiatan: "MAULID NABI", Keterangan: "HADIR", TanggalAbsen: "09/21/2024", Keterangan2: "HADIR" },
+  { Timestamp: "09/21/2024 11:29:30", NIM: "210602009", NamaLengkap: "HANDAYANI", Kegiatan: "MAULID NABI", Keterangan: "HADIR", TanggalAbsen: "09/21/2024", Keterangan2: "HADIR" },
+  { Timestamp: "09/21/2024 11:51:54", NIM: "210604028", NamaLengkap: "AHMAD AZLAN ALFARIZI", Kegiatan: "MAULID NABI", Keterangan: "HADIR", TanggalAbsen: "09/21/2024", Keterangan2: "HADIR" },
+  { Timestamp: "09/21/2024 12:14:20", NIM: "210602012", NamaLengkap: "LAELATUL JANNAH", Kegiatan: "MAULID NABI", Keterangan: "HADIR", TanggalAbsen: "09/21/2024", Keterangan2: "HADIR" },
+
  
 
     // Add more entries for September as needed
