@@ -451,6 +451,19 @@ const attendanceData = [
   { Timestamp: "09/21/2024 11:51:54", NIM: "210604028", NamaLengkap: "AHMAD AZLAN ALFARIZI", Kegiatan: "MAULID NABI", Keterangan: "HADIR", TanggalAbsen: "09/21/2024", Keterangan2: "HADIR" },
   { Timestamp: "09/21/2024 12:14:20", NIM: "210602012", NamaLengkap: "LAELATUL JANNAH", Kegiatan: "MAULID NABI", Keterangan: "HADIR", TanggalAbsen: "09/21/2024", Keterangan2: "HADIR" },
 
+    { Timestamp: "09/22/2024 08:12:03", NIM: "210104048", NamaLengkap: "MUH. IHWAN ZAINI", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "LIBUR", TanggalAbsen: "09/22/2024", Keterangan2: "LIBUR" },
+  { Timestamp: "09/22/2024 08:30:45", NIM: "210102356", NamaLengkap: "LILIK SURIANI", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "LIBUR", TanggalAbsen: "09/22/2024", Keterangan2: "LIBUR" },
+  { Timestamp: "09/22/2024 08:49:12", NIM: "210102027", NamaLengkap: "MUH. MIRWAN APRIANDI", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "LIBUR", TanggalAbsen: "09/22/2024", Keterangan2: "LIBUR" },
+  { Timestamp: "09/22/2024 09:15:36", NIM: "210102261", NamaLengkap: "ENKI RIZALDO", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "LIBUR", TanggalAbsen: "09/22/2024", Keterangan2: "LIBUR" },
+  { Timestamp: "09/22/2024 09:42:05", NIM: "210102372", NamaLengkap: "SAPMA DEWI ANGRRAINI", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "LIBUR", TanggalAbsen: "09/22/2024", Keterangan2: "LIBUR" },
+  { Timestamp: "09/22/2024 10:03:48", NIM: "210102005", NamaLengkap: "BAIQ RISA APRIANTARI", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "LIBUR", TanggalAbsen: "09/22/2024", Keterangan2: "LIBUR" },
+  { Timestamp: "09/22/2024 10:29:15", NIM: "210202031", NamaLengkap: "MAELI ASTUTI", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "LIBUR", TanggalAbsen: "09/22/2024", Keterangan2: "LIBUR" },
+  { Timestamp: "09/22/2024 10:55:22", NIM: "210601032", NamaLengkap: "IRWAN FAKHRURROZI", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "LIBUR", TanggalAbsen: "09/22/2024", Keterangan2: "LIBUR" },
+  { Timestamp: "09/22/2024 11:19:07", NIM: "210602046", NamaLengkap: "M. YOGA APRIADI", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "LIBUR", TanggalAbsen: "09/22/2024", Keterangan2: "LIBUR" },
+  { Timestamp: "09/22/2024 11:44:35", NIM: "210602009", NamaLengkap: "HANDAYANI", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "LIBUR", TanggalAbsen: "09/22/2024", Keterangan2: "LIBUR" },
+  { Timestamp: "09/22/2024 12:11:28", NIM: "210604028", NamaLengkap: "AHMAD AZLAN ALFARIZI", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "LIBUR", TanggalAbsen: "09/22/2024", Keterangan2: "LIBUR" },
+  { Timestamp: "09/22/2024 12:35:14", NIM: "210602012", NamaLengkap: "LAELATUL JANNAH", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "LIBUR", TanggalAbsen: "09/22/2024", Keterangan2: "LIBUR" }
+
  
 
     // Add more entries for September as needed
