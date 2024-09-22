@@ -462,7 +462,7 @@ const attendanceData = [
   { Timestamp: "09/22/2024 11:19:07", NIM: "210602046", NamaLengkap: "M. YOGA APRIADI", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "LIBUR", TanggalAbsen: "09/22/2024", Keterangan2: "LIBUR" },
   { Timestamp: "09/22/2024 11:44:35", NIM: "210602009", NamaLengkap: "HANDAYANI", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "LIBUR", TanggalAbsen: "09/22/2024", Keterangan2: "LIBUR" },
   { Timestamp: "09/22/2024 12:11:28", NIM: "210604028", NamaLengkap: "AHMAD AZLAN ALFARIZI", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "LIBUR", TanggalAbsen: "09/22/2024", Keterangan2: "LIBUR" },
-  { Timestamp: "09/22/2024 12:35:14", NIM: "210602012", NamaLengkap: "LAELATUL JANNAH", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "LIBUR", TanggalAbsen: "09/22/2024", Keterangan2: "LIBUR" }
+  { Timestamp: "09/22/2024 12:35:14", NIM: "210602012", NamaLengkap: "LAELATUL JANNAH", Kegiatan: "ASISTENSI MENGAJAR", Keterangan: "LIBUR", TanggalAbsen: "09/22/2024", Keterangan2: "LIBUR" },
 
  
 
