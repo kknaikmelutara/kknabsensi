@@ -796,6 +796,33 @@ const attendanceData = [
   { "Timestamp": "10/18/2024 10:15:00", "NIM": "210602009", "NamaLengkap": "HANDAYANI", "Kegiatan": "KERJA PRAKTIK", "Keterangan": "HADIR", "TanggalAbsen": "10/18/2024", "Keterangan2": "HADIR" },
   { "Timestamp": "10/18/2024 10:30:00", "NIM": "210604028", "NamaLengkap": "AHMAD AZLAN ALFARIZI", "Kegiatan": "KERJA PRAKTIK", "Keterangan": "HADIR", "TanggalAbsen": "10/18/2024", "Keterangan2": "HADIR" },
   { "Timestamp": "10/18/2024 10:45:00", "NIM": "210602012", "NamaLengkap": "LAELATUL JANNAH", "Kegiatan": "KERJA PRAKTIK", "Keterangan": "HADIR", "TanggalAbsen": "10/18/2024", "Keterangan2": "HADIR" },
+
+  { "Timestamp": "10/19/2024 08:00:00", "NIM": "210104048", "NamaLengkap": "MUH. IHWAN ZAINI", "Kegiatan": "ASISTENSI MENGAJAR", "Keterangan": "HADIR", "TanggalAbsen": "10/19/2024", "Keterangan2": "HADIR" },
+  { "Timestamp": "10/19/2024 08:15:00", "NIM": "210102356", "NamaLengkap": "LILIK SURIANI", "Kegiatan": "ASISTENSI MENGAJAR", "Keterangan": "HADIR", "TanggalAbsen": "10/19/2024", "Keterangan2": "HADIR" },
+  { "Timestamp": "10/19/2024 08:30:00", "NIM": "210102027", "NamaLengkap": "MUH. MIRWAN APRIANDI", "Kegiatan": "ASISTENSI MENGAJAR", "Keterangan": "HADIR", "TanggalAbsen": "10/19/2024", "Keterangan2": "HADIR" },
+  { "Timestamp": "10/19/2024 08:45:00", "NIM": "210102261", "NamaLengkap": "ENKI RIZALDO", "Kegiatan": "ASISTENSI MENGAJAR", "Keterangan": "HADIR", "TanggalAbsen": "10/19/2024", "Keterangan2": "HADIR" },
+  { "Timestamp": "10/19/2024 09:00:00", "NIM": "210102372", "NamaLengkap": "SAPMA DEWI ANGRRAINI", "Kegiatan": "ASISTENSI MENGAJAR", "Keterangan": "HADIR", "TanggalAbsen": "10/19/2024", "Keterangan2": "HADIR" },
+  { "Timestamp": "10/19/2024 09:15:00", "NIM": "210102005", "NamaLengkap": "BAIQ RISA APRIANTARI", "Kegiatan": "ASISTENSI MENGAJAR", "Keterangan": "HADIR", "TanggalAbsen": "10/19/2024", "Keterangan2": "HADIR" },
+  { "Timestamp": "10/19/2024 09:30:00", "NIM": "210202031", "NamaLengkap": "MAELI ASTUTI", "Kegiatan": "ASISTENSI MENGAJAR", "Keterangan": "HADIR", "TanggalAbsen": "10/19/2024", "Keterangan2": "HADIR" },
+  { "Timestamp": "10/19/2024 09:45:00", "NIM": "210601032", "NamaLengkap": "IRWAN FAKHRURROZI", "Kegiatan": "SENAM", "Keterangan": "HADIR", "TanggalAbsen": "10/19/2024", "Keterangan2": "HADIR" },
+  { "Timestamp": "10/19/2024 10:00:00", "NIM": "210602046", "NamaLengkap": "M. YOGA APRIADI", "Kegiatan": "SENAM", "Keterangan": "HADIR", "TanggalAbsen": "10/19/2024", "Keterangan2": "HADIR" },
+  { "Timestamp": "10/19/2024 10:15:00", "NIM": "210602009", "NamaLengkap": "HANDAYANI", "Kegiatan": "SENAM", "Keterangan": "HADIR", "TanggalAbsen": "10/19/2024", "Keterangan2": "HADIR" },
+  { "Timestamp": "10/19/2024 10:30:00", "NIM": "210604028", "NamaLengkap": "AHMAD AZLAN ALFARIZI", "Kegiatan": "SENAM", "Keterangan": "HADIR", "TanggalAbsen": "10/19/2024", "Keterangan2": "HADIR" },
+  { "Timestamp": "10/19/2024 10:45:00", "NIM": "210602012", "NamaLengkap": "LAELATUL JANNAH", "Kegiatan": "SENAM", "Keterangan": "HADIR", "TanggalAbsen": "10/19/2024", "Keterangan2": "HADIR" },
+
+  { "Timestamp": "10/20/2024 00:00:00", "NIM": "210104048", "NamaLengkap": "MUH. IHWAN ZAINI", "Kegiatan": "LIBUR", "Keterangan": "LIBUR", "TanggalAbsen": "10/20/2024", "Keterangan2": "LIBUR" },
+  { "Timestamp": "10/20/2024 00:00:00", "NIM": "210102356", "NamaLengkap": "LILIK SURIANI", "Kegiatan": "LIBUR", "Keterangan": "LIBUR", "TanggalAbsen": "10/20/2024", "Keterangan2": "LIBUR" },
+  { "Timestamp": "10/20/2024 00:00:00", "NIM": "210102027", "NamaLengkap": "MUH. MIRWAN APRIANDI", "Kegiatan": "LIBUR", "Keterangan": "LIBUR", "TanggalAbsen": "10/20/2024", "Keterangan2": "LIBUR" },
+  { "Timestamp": "10/20/2024 00:00:00", "NIM": "210102261", "NamaLengkap": "ENKI RIZALDO", "Kegiatan": "LIBUR", "Keterangan": "LIBUR", "TanggalAbsen": "10/20/2024", "Keterangan2": "LIBUR" },
+  { "Timestamp": "10/20/2024 00:00:00", "NIM": "210102372", "NamaLengkap": "SAPMA DEWI ANGRRAINI", "Kegiatan": "LIBUR", "Keterangan": "LIBUR", "TanggalAbsen": "10/20/2024", "Keterangan2": "LIBUR" },
+  { "Timestamp": "10/20/2024 00:00:00", "NIM": "210102005", "NamaLengkap": "BAIQ RISA APRIANTARI", "Kegiatan": "LIBUR", "Keterangan": "LIBUR", "TanggalAbsen": "10/20/2024", "Keterangan2": "LIBUR" },
+  { "Timestamp": "10/20/2024 00:00:00", "NIM": "210202031", "NamaLengkap": "MAELI ASTUTI", "Kegiatan": "LIBUR", "Keterangan": "LIBUR", "TanggalAbsen": "10/20/2024", "Keterangan2": "LIBUR" },
+  { "Timestamp": "10/20/2024 00:00:00", "NIM": "210601032", "NamaLengkap": "IRWAN FAKHRURROZI", "Kegiatan": "LIBUR", "Keterangan": "LIBUR", "TanggalAbsen": "10/20/2024", "Keterangan2": "LIBUR" },
+  { "Timestamp": "10/20/2024 00:00:00", "NIM": "210602046", "NamaLengkap": "M. YOGA APRIADI", "Kegiatan": "LIBUR", "Keterangan": "LIBUR", "TanggalAbsen": "10/20/2024", "Keterangan2": "LIBUR" },
+  { "Timestamp": "10/20/2024 00:00:00", "NIM": "210602009", "NamaLengkap": "HANDAYANI", "Kegiatan": "LIBUR", "Keterangan": "LIBUR", "TanggalAbsen": "10/20/2024", "Keterangan2": "LIBUR" },
+  { "Timestamp": "10/20/2024 00:00:00", "NIM": "210604028", "NamaLengkap": "AHMAD AZLAN ALFARIZI", "Kegiatan": "LIBUR", "Keterangan": "LIBUR", "TanggalAbsen": "10/20/2024", "Keterangan2": "LIBUR" },
+  { "Timestamp": "10/20/2024 00:00:00", "NIM": "210602012", "NamaLengkap": "LAELATUL JANNAH", "Kegiatan": "LIBUR", "Keterangan": "LIBUR", "TanggalAbsen": "10/20/2024", "Keterangan2": "LIBUR" },
+
   
   // Add more entries for October as needed
 
